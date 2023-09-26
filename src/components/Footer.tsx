@@ -1,5 +1,5 @@
 export const Footer = () => (
-  <footer className="mb-4 mt-auto text-sm text-gray-500">
+  <footer className="mb-2 mt-auto text-center text-sm text-gray-500">
     Made with ❤️ by Diego Natalo
   </footer>
 )

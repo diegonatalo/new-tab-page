@@ -1,4 +1,4 @@
-import { Sidebar } from '@/components/Sidebar'
+import { Footer } from '@/components/Footer'
 import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
 import { ReactNode } from 'react'
@@ -13,10 +13,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="pt-br">
       <body className={roboto.className}>
-        <Sidebar />
         {children}
+        <Footer />
       </body>
     </html>
   )

@@ -6,14 +6,11 @@ export type Category = {
   websites: Website[]
 }
 
-export type CategoriesData = {
+type PageInfo = {
+  slug: string
   categories: Category[]
 }
 
-export type SidebarData = {
-  sidebar: CategoriesData
-}
-
-export type CategoryPageData = {
-  category: Category
+export type PageData = {
+  page: PageInfo
 }

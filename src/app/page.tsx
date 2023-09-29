@@ -17,7 +17,7 @@ const getCategories = async (): Promise<PageData> => {
     }
   `
 
-  return fetchHygraphQuery(query, 86400)
+  return fetchHygraphQuery(query, 60 * 60)
 }
 
 export default async function Home() {

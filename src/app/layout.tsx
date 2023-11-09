@@ -7,8 +7,8 @@ import './globals.css'
 const roboto = Roboto({ subsets: ['latin'], weight: ['400', '500', '700'] })
 
 export const metadata: Metadata = {
-  title: 'Nova guia',
-  description: 'Home page created by Diego Natalo'
+  title: 'TabLinks',
+  description: 'Usefull links for developers created by Diego Natalo'
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {

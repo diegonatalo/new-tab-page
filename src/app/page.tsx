@@ -43,9 +43,9 @@ export default async function Home() {
   const { page: sites } = await getSites()
 
   return (
-    <main className="flex h-full items-start justify-between gap-6 px-8 py-16">
-      <div className="flex w-full max-w-[50%] flex-col items-center gap-6">
-        <section className="grid grid-cols-2 gap-3">
+    <main className="flex h-full items-start justify-between gap-3 p-3 lg:gap-8 lg:p-8">
+      <div className="flex w-full justify-center py-8 sm:max-w-[50%]">
+        <section className="grid grid-cols-1 gap-3 lg:grid-cols-2">
           {sites.categories.map((category) =>
             category.websites.map((website) => (
               <WebsiteLink
@@ -58,10 +58,10 @@ export default async function Home() {
         </section>
       </div>
 
-      <div className="hidden self-stretch border-l border-l-gray-800 xl:block" />
+      <div className="block self-stretch border-l border-l-gray-800" />
 
-      <div className="flex w-full max-w-[50%] flex-col items-center gap-6">
-        <section className="grid grid-cols-4 gap-3">
+      <div className="flex w-full justify-center py-8 sm:max-w-[50%]">
+        <section className="grid grid-cols-1 gap-3 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
           {packages.categories.map((category) =>
             category.websites.map((website) => (
               <WebsiteLink
